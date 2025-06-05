@@ -18,4 +18,4 @@
 //  no parent record, inspection not “Fail”)?
 // handle API failures gracefully; (e.g., if (!result.getSuccess()) { logDebug(...) return; })
 //  also be sure to include appropriate debug/log messages to indicate what
-//  would happen at runtime!
+//  would happen at runtime! Use logDebug(...) (or comments) to indicate where you would log errors or informational messages.
