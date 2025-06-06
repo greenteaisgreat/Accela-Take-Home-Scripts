@@ -24,7 +24,7 @@ if (!capContactResult.getSuccess()) {
 // handle API call success and retrieve CapContactScriptModel
 else {
   aa.logDebug("Successfully retrieved " + contacts.length + " contacts");
-  var contacts = capContactResult.getOutput(); // returns array of CapContactScriptModel
+  var contacts = capContactResult.getOutput(); // returns CapContactScriptModel array
 
   // initialize variables for Owner and Applicant models
   var ownerContactScriptModel = null;
