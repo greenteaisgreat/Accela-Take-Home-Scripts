@@ -7,7 +7,7 @@
  * - capId is provided by the EMSE engine in this context
  */
 
-// initiate script
+// log initiation of script
 aa.logDebug("Starting script: CopyPhoneOnSubmit.js");
 aa.logDebug("Event: ApplicationSubmit");
 
