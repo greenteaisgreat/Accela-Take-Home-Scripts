@@ -187,13 +187,13 @@ if (inspResult === "Fail") {
       // check if no email was found after the loop
       if (!primaryContactEmail) {
         logDebug(
-          "WARNING: No Owner or Applicant contact with a non-blank email found. Skipping email and reschedule."
+          "WARNING: No Owner or Applicant contact with a non-blank email found. Skipping email and reschedule"
         );
       }
     } // log if no contacts found
     else {
       logDebug(
-        "WARNING: No contacts found for this record. Skipping email and reschedule."
+        "WARNING: No contacts found for this record. Skipping email and reschedule"
       );
     }
   }
