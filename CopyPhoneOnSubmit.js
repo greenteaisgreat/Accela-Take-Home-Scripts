@@ -9,7 +9,7 @@
 
 // log initiation of script
 logDebug("Starting script: CopyPhoneOnSubmit.js");
-logDebug("Event: ApplicationSubmit");
+logDebug("Event: Retrieving Contact");
 
 // retrieve all CapContactScriptModel entries for the current record
 var capContactResult = aa.people.getCapContactByCapID(capId);
@@ -131,14 +131,14 @@ else {
               // handle success for saving the phone number
               else {
                 logDebug(
-                  "Successfully saved updated Owner contact with Applicant phone."
+                  "Successfully saved updated Owner contact with Applicant phone"
                 );
               }
             }
             // handle unsuccessful check for Applicant's phone number
             else {
               logDebug(
-                "Applicant does not have a phone number. No phone number to copy."
+                "Applicant does not have a phone number. No phone number to copy"
               );
             }
           }
@@ -146,19 +146,19 @@ else {
         // handle unsuccessful check for Applicant PeopleModel
         else {
           logDebug(
-            "Applicant contact not found for this record. Cannot copy phone number."
+            "Applicant contact not found for this record. Cannot copy phone number"
           );
         }
       }
       // handle Owner already having a phone number
       else {
-        logDebug("Owner already has a phone number. No action needed.");
+        logDebug("Owner already has a phone number. No action needed");
       }
     }
   } // handle unsuccessful check for Owner PeopleModel
   else {
     logDebug(
-      "Owner contact not found for this record. Cannot copy phone number."
+      "Owner contact not found for this record. Cannot copy phone number"
     );
   }
 }
