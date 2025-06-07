@@ -6,7 +6,7 @@
  *  - capId is provided by the EMSE engine in this context.
  *  - aa global object is available and all necessary methods within it
  *  - inspection time is based on a 24hr format
- *  - Accela's date format is MM/DD/YYYY, per the docs
+ *  - Accela's scheduleInspection date format is MM/DD/YYYY, per the docs
  */
 
 // helper function to add business days, omitting weekends
@@ -26,10 +26,6 @@ function addBusinessDays(startDate, days) {
   }
   return date;
 }
-
-var date = new Date();
-var threeBizDays = addBusinessDays(date, 3).toLocaleDateString();
-console.log(threeBizDays);
 
 // log initiation of script
 logDebug("Starting script: FailInspectResubmit.js");
