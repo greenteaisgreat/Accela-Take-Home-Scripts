@@ -1,7 +1,7 @@
 /**
  * Author: Nathan Gregory Bornstein
  * Date: June 8th, 2025
- * Purpose: Exercise 2: reschedule and email Contact after a failed inspection
+ * Purpose: Reschedule and email Contact after a failed inspection
  * Assumptions:
  *  - capId is provided by the EMSE engine in this context.
  *  - aa global object is available and all necessary methods within it
