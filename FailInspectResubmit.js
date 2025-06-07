@@ -3,7 +3,7 @@
  * Date: June 8th, 2025
  * Purpose: Reschedule and email Contact after a failed inspection
  * Assumptions:
- *  - capId is provided by the EMSE engine in this context.
+ *  - capId is provided by the EMSE engine in this context
  *  - aa global object is available and all necessary methods within it
  *  - inspection time is based on a 24hr format
  *  - Accela's scheduleInspection date format is MM/DD/YYYY, per the docs
@@ -259,7 +259,7 @@ if (inspResult === "Fail") {
   // handle failure in retrieving inspection type
   else {
     logDebug(
-      "WARNING: Could not determine inspection type from InspectionScriptModel.\nSkipping re-scheduling"
+      "WARNING: Could not determine inspection type from InspectionScriptModel.\nSkipping rescheduling"
     );
     return;
   }
@@ -290,7 +290,7 @@ if (inspResult === "Fail") {
     }
   } // handle failure in retrieving inspection type
   else {
-    logDebug("Re-scheduling skipped due to missing inspection type");
+    logDebug("Rescheduling skipped due to missing inspection type");
     return;
   }
 }
