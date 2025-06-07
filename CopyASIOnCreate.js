@@ -113,8 +113,7 @@ for (var i = 0; i < parentASIArray.length; i++) {
     break;
   }
 }
-
-// log if the target field was not found on the parent
+// handle failure if target field was not found on the parent
 if (!latestSubValueFound) {
   logDebug("'Latest Sub-Value' field not found on the parent record");
 }
