@@ -1,7 +1,7 @@
 /**
  * Author: Nathan Gregory Bornstein
  * Date: June 8th, 2025
- * Purpose: Exercise 1: Copy Applicant’s phone to Owner on ApplicationSubmit
+ * Purpose: Copy Applicant’s phone to Owner on ApplicationSubmit
  * Assumptions:
  * - aa global object is available and all necessary methods within it
  * - capId is provided by the EMSE engine in this context
