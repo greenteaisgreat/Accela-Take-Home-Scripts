@@ -232,22 +232,22 @@ if (inspResult === "Fail") {
       return;
     } // handle email send success
     else {
-      logDebug("Email sent successfully to " + toAddr + "!");
+      logDebug("Email successfully sent to " + toAddr + "!");
     }
   }
 
   // get current date
   var today = new Date();
 
-  // use helper function to get 3 business days from 'today' var,
-  // adhering to Accela requirements of MM/DD/YYYY format
+  // use helper function to get 3 business days from 'today' var, adhering to Accela
+  // requirements of MM/DD/YYYY format for javaDate param in aa.inspection.scheduleInspection()
   var threeBizDays = addBusinessDays(today, 3).toLocaleDateString();
   logDebug("Calculated target date: " + threeBizDays);
 
   // our custom inspection type model
   var inspectionTypeToSchedule = null;
 
-  // get inspection type from InspectionScriptModel retrieved earlier
+  // get inspection type from InspectionScriptModel, retrieved earlier
   if (
     // add check if getInspectionType method exists
     inspectionModel &&
