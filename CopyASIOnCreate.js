@@ -23,7 +23,8 @@ if (!childEstimatedValue) {
 // handle success in retrieving childEstimatedValue
 logDebug("Child 'Estimated Value' found: " + childEstimatedValue);
 
-// check if the current record has a parent record, assuming capId exists on getParentCapID
+// check if the current record has a parent record, assuming capId exists
+// on getParentCapID, per Accela docs on CapIDScriptModel class
 var parentCapID = capId.getParentCapID();
 
 // handle failure in retrieving parent record
