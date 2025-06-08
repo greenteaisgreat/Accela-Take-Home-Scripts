@@ -1,15 +1,15 @@
 /**
  * Author: Nathan Gregory Bornstein
  * Date: June 8th, 2025
- * Purpose: Expire "Pending Fee" Records using a Batch Function
+ * Purpose: Expire "Pending Fee" Records using a batch Function
  * Assumptions:
  *  - aa global object is available and all necessary methods within it
  */
 
 // helper function to return the number of full days between two Date objects
 function dateDiffInDays(d1, d2) {
-  // convert both dates to UTC to prevent problems with daylight saving time,
-  // calculating the difference in milliseconds...
+  // convert both dates to UTC to prevent problems with daylight saving time
+  // by calculating the difference in milliseconds...
   var diffMs =
     Date.UTC(d2.getFullYear(), d2.getMonth(), d2.getDate()) -
     Date.UTC(d1.getFullYear(), d1.getMonth(), d1.getDate());
